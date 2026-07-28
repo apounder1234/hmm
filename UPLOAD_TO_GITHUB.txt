@@ -1,0 +1,13 @@
+SUNPATHS — NO-INSTALL GITHUB PAGES
+
+1. Go to github.com and create a new PUBLIC repository, for example: sunpaths-game
+2. In the empty repository choose “uploading an existing file”.
+3. Drag in ALL contents of this folder. The app folder must remain a folder.
+4. Commit the files.
+5. Open Settings > Pages.
+6. Source: Deploy from a branch.
+7. Branch: main. Folder: /(root). Save.
+8. Open the URL GitHub shows, normally:
+   https://YOUR-USERNAME.github.io/sunpaths-game/
+
+There is no npm install and no local package download.
