@@ -1,0 +1,21 @@
+SUNPATHS browser repair validation
+---------------------------------
+20 distinct seeds produced 11 different first Local Conditions.
+{
+  "cloudBank": 3,
+  "demandSurge": 1,
+  "drought": 2,
+  "engineeringExchange": 1,
+  "fuelSupplyDisruption": 1,
+  "gridBottleneck": 1,
+  "materialsShortage": 2,
+  "rainstorm": 2,
+  "recoveryBreakthrough": 2,
+  "strongLocalWind": 2,
+  "wildfireRisk": 3
+}
+After human action 1: AI completed round 1 and control returned to the human.
+After human action 2: AI completed Development and the game entered human Dispatch.
+Human Local Condition: rainstorm
+Dispatch recommendation generated successfully.
+PASS

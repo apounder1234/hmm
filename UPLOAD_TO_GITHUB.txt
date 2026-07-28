@@ -1,0 +1,8 @@
+REPLACE THE OLD VERSION
+
+1. In your GitHub repository, delete the old app folder (or overwrite every file in it).
+2. Upload index.html, README.md, .nojekyll and the complete app folder from this package.
+3. Commit the changes.
+4. Refresh the GitHub Pages site with Ctrl+F5.
+
+The important repaired file is app/ui/main.js, but upload the whole package to keep all files consistent.
