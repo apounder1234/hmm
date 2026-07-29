@@ -1,0 +1,6 @@
+React 18.2.0, ReactDOM 18.2.0 and Scheduler
+Copyright (c) Meta Platforms, Inc. and affiliates.
+Licensed under the MIT License.
+
+The bundled production runtime files retain their original @license headers.
+Source project: https://github.com/facebook/react

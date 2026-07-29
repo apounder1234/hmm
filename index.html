@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10231d" />
+    <meta name="description" content="SUNPATHS guided educational energy strategy game" />
+    <title>SUNPATHS — Candidate A.5.1</title>
+    <link rel="stylesheet" href="./app/ui/styles.css" />
+    <script src="./app/vendor/react-bootstrap.js"></script>
+    <script src="./app/vendor/react-18.2.0.chunk.js"></script>
+    <script src="./app/vendor/react-dom-18.2.0.chunk.js"></script>
+    <script>
+      function showSunpathsStartupError(error) {
+        const message = error && (error.stack || error.message) ? (error.stack || error.message) : String(error || "Unknown startup error");
+        const root = document.getElementById("root");
+        if (!root || globalThis.__sunpathsAppStarted) return;
+        root.innerHTML = `<main class="crash-screen"><p class="eyebrow">Startup error</p><h1>SUNPATHS could not start</h1><p>The interface files did not load correctly. Replace the deployed folder with the complete A.5.1 package.</p><pre></pre></main>`;
+        root.querySelector("pre").textContent = message;
+      }
+      globalThis.__sunpathsShowStartupError = showSunpathsStartupError;
+      globalThis.addEventListener("error", event => showSunpathsStartupError(event.error || event.message));
+      globalThis.addEventListener("unhandledrejection", event => showSunpathsStartupError(event.reason));
+      try {
+        globalThis.__sunpathsReactRuntime.expose();
+      } catch (error) {
+        globalThis.__sunpathsStartupError = error;
+        globalThis.addEventListener("DOMContentLoaded", () => showSunpathsStartupError(error));
+      }
+      globalThis.setTimeout(() => {
+        if (!globalThis.__sunpathsAppStarted) showSunpathsStartupError("The application entry module did not finish loading.");
+      }, 15000);
+    </script>
+  </head>
+  <body>
+    <div id="root"><main class="start-screen"><p>Loading SUNPATHS…</p></main></div>
+    <noscript>SUNPATHS requires JavaScript.</noscript>
+    <script type="module" src="./app/ui/main.js" onerror="globalThis.__sunpathsShowStartupError?.('The application module could not be loaded.')"></script>
+  </body>
+</html>
