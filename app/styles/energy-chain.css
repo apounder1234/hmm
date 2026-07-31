@@ -1,0 +1,214 @@
+/* SUNPATHS Energy Chain
+   One visual owner for Player Board, Development and Dispatch contexts. */
+
+/* A.5.16 shared Energy-chain component.
+   This entire namespace is intentionally contiguous so it can move to
+   energy-chain.css later without changing component markup. */
+.sp-energy-chain {
+  display:grid;
+  gap:.8rem;
+  width:100%;
+  min-width:0;
+}
+.sp-energy-chain__row {
+  display:grid;
+  grid-template-columns:minmax(8.5rem,1fr) auto minmax(8.5rem,1fr) auto minmax(8.5rem,1fr) auto minmax(8.5rem,1fr) auto minmax(8.5rem,1fr);
+  align-items:stretch;
+  gap:.65rem;
+  width:100%;
+  min-width:0;
+  padding:.35rem 0;
+  overflow:visible;
+}
+.sp-energy-chain__stage {
+  appearance:none;
+  display:grid;
+  align-content:start;
+  gap:.75rem;
+  width:100%;
+  min-width:0;
+  min-height:9rem;
+  padding:1rem .8rem;
+  color:var(--text);
+  text-align:center;
+  cursor:pointer;
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:1rem;
+  background:rgba(255,255,255,.04);
+}
+.sp-energy-chain__stage:hover {
+  border-color:rgba(255,214,72,.65);
+  background:rgba(255,214,72,.085);
+}
+.sp-energy-chain__stage-label {
+  font-size:.88rem;
+  font-weight:850;
+  line-height:1.2;
+  letter-spacing:.065em;
+  text-transform:uppercase;
+  white-space:normal;
+  opacity:.9;
+}
+.sp-energy-chain__stage-main {
+  display:grid;
+  grid-template-columns:1fr;
+  align-items:center;
+  justify-items:center;
+  gap:.42rem;
+  min-width:0;
+}
+.sp-energy-chain__stage-icon {
+  align-self:center;
+  font-size:2rem;
+  line-height:1;
+}
+.sp-energy-chain__stage-content {
+  display:grid;
+  gap:.34rem;
+  justify-items:center;
+  min-width:0;
+}
+.sp-energy-chain__value-row {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:.38rem;
+  min-width:0;
+}
+.sp-energy-chain__stage-total {
+  font-size:1.35rem;
+  line-height:1;
+}
+.sp-energy-chain__pips {
+  display:inline-flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:.18rem;
+  min-height:.68rem;
+}
+.sp-energy-chain__pips i {
+  display:block;
+  width:.68rem;
+  height:.68rem;
+  border-radius:50%;
+  background:currentColor;
+  box-shadow:0 0 .42rem currentColor;
+}
+.sp-energy-chain__pips.is-energy { color:var(--sun); }
+.sp-energy-chain__pips.is-light { color:#fff5a8; }
+.sp-energy-chain__pips.is-pending { color:rgba(137,200,255,.9); }
+.sp-energy-chain__pips.is-pending i {
+  border:1.5px solid currentColor;
+  background:transparent;
+  box-shadow:none;
+}
+.sp-energy-chain__sources {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.22rem;
+  min-height:1rem;
+}
+.sp-energy-chain__source-icon {
+  font-size:1.25rem;
+  line-height:1;
+}
+.sp-energy-chain__source-icon.is-muted { opacity:.4; }
+.sp-energy-chain__note {
+  display:inline-flex;
+  align-items:center;
+  gap:.22rem;
+  padding:.22rem .45rem;
+  color:rgba(176,220,255,.95);
+  font-size:.76rem;
+  font-weight:800;
+  border-radius:999px;
+  background:rgba(137,200,255,.1);
+}
+.sp-energy-chain__loss {
+  display:inline-flex;
+  justify-content:center;
+  gap:.14rem;
+  min-height:.6rem;
+}
+.sp-energy-chain__loss i {
+  position:relative;
+  width:.6rem;
+  height:.6rem;
+  border:1.5px solid rgba(255,120,120,.82);
+  border-radius:50%;
+}
+.sp-energy-chain__loss i::after {
+  content:"";
+  position:absolute;
+  top:-2px;
+  left:47%;
+  width:1.5px;
+  height:.7rem;
+  background:rgba(255,120,120,.88);
+  transform:rotate(45deg);
+}
+.sp-energy-chain__pass {
+  font-size:.9rem;
+  line-height:.6rem;
+  opacity:.42;
+}
+.sp-energy-chain__arrow {
+  align-self:center;
+  color:var(--sun);
+  font-size:1.9rem;
+  opacity:.75;
+}
+.sp-energy-chain__future-storage {
+  display:flex;
+  align-items:center;
+  gap:.45rem;
+  min-height:1.7rem;
+  padding-left:1.2rem;
+  color:rgba(137,200,255,.95);
+}
+.sp-energy-chain__future-line { font-size:1.15rem; }
+.sp-energy-chain__future-node {
+  display:inline-flex;
+  align-items:center;
+  gap:.3rem;
+  padding:.25rem .4rem;
+  border:1px dashed rgba(137,200,255,.45);
+  border-radius:.55rem;
+}
+.sp-energy-chain__future-generation {
+  padding:.15rem .35rem;
+  font-size:.65rem;
+  font-weight:900;
+  letter-spacing:.05em;
+  border-radius:999px;
+  background:rgba(137,200,255,.12);
+}
+.sp-energy-chain__details { justify-self:start; }
+@media (max-width:1200px) and (min-width:761px) {
+  .sp-energy-chain__row { gap:.4rem; }
+  .sp-energy-chain__stage { min-height:8rem; padding:.8rem .55rem; }
+  .sp-energy-chain__stage-label { font-size:.78rem; }
+  .sp-energy-chain__stage-icon { font-size:1.7rem; }
+  .sp-energy-chain__pips i { width:.58rem; height:.58rem; }
+}
+@media (max-width:760px) {
+  .sp-energy-chain__row { grid-template-columns:minmax(0,1fr); gap:.24rem; }
+  .sp-energy-chain__arrow { justify-self:center; line-height:.75rem; transform:rotate(90deg); }
+  .sp-energy-chain__stage {
+    grid-template-columns:minmax(7rem,.34fr) 1fr;
+    align-items:center;
+    width:100%;
+    min-height:6.5rem;
+    padding:.62rem .75rem;
+    text-align:left;
+  }
+  .sp-energy-chain__stage-label { align-self:center; font-size:.72rem; }
+  .sp-energy-chain__stage-main { grid-template-columns:auto 1fr; justify-items:start; }
+  .sp-energy-chain__stage-content { justify-items:start; }
+  .sp-energy-chain__value-row,
+  .sp-energy-chain__pips,
+  .sp-energy-chain__loss { justify-content:flex-start; }
+  .sp-energy-chain__future-storage { flex-wrap:wrap; padding-left:.25rem; }
+}
