@@ -6,12 +6,12 @@ if (globalThis.__sunpathsStartupError)
     throw globalThis.__sunpathsStartupError;
 if (!React || !createRoot)
     throw new Error("SUNPATHS local interface runtime failed to load.");
-import { defaultConfig, validateConfig, gameModes, getGameMode, createModeConfig, featureEnabled, modeAllowsTechnology, modeOpeningMode, defaultCapabilityForPathway } from "./config.js";
-import { createGame, applyCommand, currentOrder, currentPlayerId, canCompleteFoundingProject, foundingProjectDefinition, deserializeGame, serializeGame } from "./engine.js";
-import { activeGlobalEvent, directTradeBlocked, describeCostModifiers, getContinentProfile, getGlobalEvent, getKnowledgeRequirement, getLightingLevel, getPathwayAffinity, getTransmissionLevel, invariantErrors, gatherAmount, getTechnology, pathways, totalEnergy, totalLoss, warehouseTotal, hasRelevantSystem } from "./rules.js";
-import { aiPrepared, chooseDevelopmentDecision, chooseDispatchPlan, pumpAi } from "./ai.js";
-import { defaultSimulationScenario, technologyDataSets, aggregateReportToCsv, balanceFlagsToCsv, playerResultsToCsv, simulationReportToJson } from "./simulation.js";
-import { buildLegality, conditionImpactPreview, developmentActionLegality, effectiveBuildCost, getActionPreview, getConditionRelevance, getCurrentMaximumLight, getDevelopmentConstraint, getEndGameDebrief, getEnergyChainBreakdown, getGenerationExplanation, getPrimaryBottleneck, getReliabilityTarget, getRequiredLight, importLegality, previewDispatch, systemGuidance, systemSnapshot, technologyImpactPreview, technologyReadiness, temporaryKnowledgeUnlocks } from "./viewModel.js";
+import { defaultConfig, validateConfig, gameModes, getGameMode, createModeConfig, featureEnabled, modeAllowsTechnology, modeOpeningMode, defaultCapabilityForPathway } from "./config.js?v=a5.22.27";
+import { createGame, applyCommand, currentOrder, currentPlayerId, canCompleteFoundingProject, foundingProjectDefinition, deserializeGame, serializeGame } from "./engine.js?v=a5.22.27";
+import { activeGlobalEvent, directTradeBlocked, describeCostModifiers, getContinentProfile, getGlobalEvent, getKnowledgeRequirement, getLightingLevel, getPathwayAffinity, getTransmissionLevel, invariantErrors, gatherAmount, getTechnology, pathways, totalEnergy, totalLoss, warehouseTotal, hasRelevantSystem } from "./rules.js?v=a5.22.27";
+import { aiPrepared, chooseDevelopmentDecision, chooseDispatchPlan, pumpAi } from "./ai.js?v=a5.22.27";
+import { defaultSimulationScenario, technologyDataSets, aggregateReportToCsv, balanceFlagsToCsv, playerResultsToCsv, simulationReportToJson } from "./simulation.js?v=a5.22.27";
+import { buildLegality, conditionImpactPreview, developmentActionLegality, effectiveBuildCost, getActionPreview, getConditionRelevance, getCurrentMaximumLight, getDevelopmentConstraint, getEndGameDebrief, getEnergyChainBreakdown, getGenerationExplanation, getPrimaryBottleneck, getReliabilityTarget, getRequiredLight, importLegality, previewDispatch, systemGuidance, systemSnapshot, technologyImpactPreview, technologyReadiness, temporaryKnowledgeUnlocks } from "./viewModel.js?v=a5.22.27";
 const h = React.createElement;
 const continentIcons = { africa: "◒", asia: "◐", europe: "◓", northAmerica: "◔", southAmerica: "◕", australia: "◉" };
 const weatherLabels = { brightSun: "Bright Sun", rain: "Rain", strongWind: "Strong Wind", storm: "Storm", calmOvercast: "Calm Overcast" };

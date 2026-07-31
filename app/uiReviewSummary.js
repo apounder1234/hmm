@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { uiShared } from "./uiShared.js";
+import { uiShared } from "./uiShared.js?v=a5.22.27";
 
 const { getTechnology, getGenerationExplanation, conditionDefinition, resourceLabels, warehouseTotal, featureEnabled, h } = uiShared;
 

@@ -1,5 +1,5 @@
 // @ts-check
-import { uiShared } from "./uiShared.js";
+import { uiShared } from "./uiShared.js?v=a5.22.27";
 
 const {
     h,

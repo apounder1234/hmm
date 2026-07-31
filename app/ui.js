@@ -1,8 +1,8 @@
 // @ts-nocheck
-import { uiShared } from "./uiShared.js";
-import { StartScreen, ModeSelection, SetupScreen } from "./uiSetup.js";
-import { GameScreen } from "./uiGame.js";
-import { CardsScreen, RulesScreen, SimulationLab } from "./uiReference.js";
+import { uiShared } from "./uiShared.js?v=a5.22.27";
+import { StartScreen, ModeSelection, SetupScreen } from "./uiSetup.js?v=a5.22.27";
+import { GameScreen } from "./uiGame.js?v=a5.22.27";
+import { CardsScreen, RulesScreen, SimulationLab } from "./uiReference.js?v=a5.22.27";
 const { React, useEffect, useState, createRoot, defaultConfig, createGame, applyCommand, aiPrepared, deserializeGame, serializeGame, clone, makeParticipants, newRandomSeed, createModeConfig, getGameMode, modeOpeningMode, defaultCapabilityForPathway, featureEnabled, h, button } = uiShared;
 class AppErrorBoundary extends React.Component {
     constructor(props) {

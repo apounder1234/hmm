@@ -1,9 +1,9 @@
 // @ts-check
 // SUNPATHS organised source. Each section has one named responsibility.
-import { configHash, validateConfig, hashText, defaultConfig, createModeConfig, featureEnabled, modeAllowsTechnology, modeOpeningMode, normalizeGameMode } from "./config.js";
-import { createRandomState, shuffle } from "./random.js";
-import { activeGlobalEvent, conditionApplies, directTradeBlocked, getCondition, getGlobalEvent, globalEventDrawsThisGeneration, countInstalled, emptyEnergy, getPlayer, getTechnology, log, resourceTypes, applyCompletedUpgradeConsequences, getEffectiveUpgradeCost, getKnowledgeRequirement, emptyMetrics, getStartingTechnologyIds, setOpeningWeather, activateOpeningWeather, revealPreparedAndBeginFounding, addEnergy, fuelPlantMaximumOutput, fossilChainSnapshot, hasRelevantSystem, hasTechnology, pathways, totalEnergy, getContinentGenerationModifiers, gatherAmount, discardCurrentConditions, drawLocalConditions, finalRanking, advanceWeather, setInitialCurrent, setInitialForecast, assertInvariants, getContinentProfile, warehouseTotal, worldMarketBlocked, worldMarketRate } from "./rules.js";
-import { beginEnergySummit, currentSummitPlayerId, executeDirectTrade, passSummitTurn, proposeSummitTrade, respondSummitTrade } from "./trade.js";
+import { configHash, validateConfig, hashText, defaultConfig, createModeConfig, featureEnabled, modeAllowsTechnology, modeOpeningMode, normalizeGameMode } from "./config.js?v=a5.22.27";
+import { createRandomState, shuffle } from "./random.js?v=a5.22.27";
+import { activeGlobalEvent, conditionApplies, directTradeBlocked, getCondition, getGlobalEvent, globalEventDrawsThisGeneration, countInstalled, emptyEnergy, getPlayer, getTechnology, log, resourceTypes, applyCompletedUpgradeConsequences, getEffectiveUpgradeCost, getKnowledgeRequirement, emptyMetrics, getStartingTechnologyIds, setOpeningWeather, activateOpeningWeather, revealPreparedAndBeginFounding, addEnergy, fuelPlantMaximumOutput, fossilChainSnapshot, hasRelevantSystem, hasTechnology, pathways, totalEnergy, getContinentGenerationModifiers, gatherAmount, discardCurrentConditions, drawLocalConditions, finalRanking, advanceWeather, setInitialCurrent, setInitialForecast, assertInvariants, getContinentProfile, warehouseTotal, worldMarketBlocked, worldMarketRate } from "./rules.js?v=a5.22.27";
+import { beginEnergySummit, currentSummitPlayerId, executeDirectTrade, passSummitTurn, proposeSummitTrade, respondSummitTrade } from "./trade.js?v=a5.22.27";
 // -----------------------------------------------------------------------------
 // Undo and Generation reset
 // -----------------------------------------------------------------------------

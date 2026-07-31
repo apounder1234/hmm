@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { uiShared } from "./uiShared.js";
+import { uiShared } from "./uiShared.js?v=a5.22.27";
 
 const {
     React,
@@ -417,7 +417,7 @@ function PreparedSelection({ game, onSelect }) {
         })),
         chooseCapability ? h(React.Fragment, null,
             h("div", { className: "prepared-intro capability-intro" }, h("p", { className: "eyebrow" }, "Special Capability"), h("h3", null, "Choose one opening advantage")),
-            h("div", { className: "capability-choice-grid" }, ...game.config.preparedCapabilities.map(item => h("button", { key: item.id, type: "button", className: `capability-choice ${capability === item.id ? "selected" : ""}`, onClick: () => setCapability(item.id) }, h("strong", null, capabilityLabels[item.id]), h("small", null, item.effect)))
+            h("div", { className: "capability-choice-grid" }, ...game.config.preparedCapabilities.map(item => h("button", { key: item.id, type: "button", className: `capability-choice ${capability === item.id ? "selected" : ""}`, onClick: () => setCapability(item.id) }, h("strong", null, capabilityLabels[item.id]), h("small", null, item.effect))))
         ) : h("div", { className: "automatic-capability-note" }, h("strong", null, "Beginner layer"), h("p", null, "Choose only the Energy pathway. The matching opening support is assigned automatically.")),
         h("div", { className: "secret-lock-row" },
             h("p", null, h("b", null, chooseCapability ? "Your secret plan: " : "Your starting pathway: "), chooseCapability ? `${pathwayLabels[pathway]} + ${capabilityLabels[capability]}` : pathwayLabels[pathway]),

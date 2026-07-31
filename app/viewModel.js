@@ -1,9 +1,9 @@
 // @ts-check
 // SUNPATHS organised source. Each section has one named responsibility.
-import { applyCommand } from "./engine.js";
-import { chooseDispatchPlan } from "./ai.js";
-import { conditionApplies, countInstalled, fuelPlantMaximumOutput, fossilChainSnapshot, getTechnology, hasTechnology, pathways, totalEnergy, getContinentGenerationModifiers, getEffectiveUpgradeCost, getKnowledgeRequirement, worldMarketBlocked, worldMarketRate } from "./rules.js";
-import { featureEnabled, modeAllowsTechnology } from "./config.js";
+import { applyCommand } from "./engine.js?v=a5.22.27";
+import { chooseDispatchPlan } from "./ai.js?v=a5.22.27";
+import { conditionApplies, countInstalled, fuelPlantMaximumOutput, fossilChainSnapshot, getTechnology, hasTechnology, pathways, totalEnergy, getContinentGenerationModifiers, getEffectiveUpgradeCost, getKnowledgeRequirement, worldMarketBlocked, worldMarketRate } from "./rules.js?v=a5.22.27";
+import { featureEnabled, modeAllowsTechnology } from "./config.js?v=a5.22.27";
 // -----------------------------------------------------------------------------
 // Interface legality and system previews
 // -----------------------------------------------------------------------------

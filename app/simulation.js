@@ -1,10 +1,10 @@
 // @ts-nocheck
 // SUNPATHS organised source. Each section has one named responsibility.
-import { aiAcceptsSummitOffer, aiPrepared, chooseAiSummitOffer, attemptAiTrade, chooseDevelopmentDecision, chooseDispatchDecision, recordAiDecision } from "./ai.js";
-import { configHash } from "./config.js";
-import { createGame, applyCommandFast, currentPlayerId, canCompleteFoundingProject } from "./engine.js";
-import { createRandomState, randomInt } from "./random.js";
-import { assertInvariants, getTechnology, resourceTypes, totalLoss, usableStoredEnergy } from "./rules.js";
+import { aiAcceptsSummitOffer, aiPrepared, chooseAiSummitOffer, attemptAiTrade, chooseDevelopmentDecision, chooseDispatchDecision, recordAiDecision } from "./ai.js?v=a5.22.27";
+import { configHash } from "./config.js?v=a5.22.27";
+import { createGame, applyCommandFast, currentPlayerId, canCompleteFoundingProject } from "./engine.js?v=a5.22.27";
+import { createRandomState, randomInt } from "./random.js?v=a5.22.27";
+import { assertInvariants, getTechnology, resourceTypes, totalLoss, usableStoredEnergy } from "./rules.js?v=a5.22.27";
 // -----------------------------------------------------------------------------
 // Simulation scenarios
 // -----------------------------------------------------------------------------

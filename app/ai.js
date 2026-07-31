@@ -1,9 +1,9 @@
 // @ts-check
 // SUNPATHS organised source. Each section has one named responsibility.
-import { applyCommand, applyCommandFast, canCompleteFoundingProject, currentPlayerId } from "./engine.js";
-import { randomInt } from "./random.js";
-import { activeGlobalEvent, conditionApplies, hasRelevantSystem, emptyEnergy, fuelPlantMaximumOutput, fossilChainSnapshot, getTechnology, hasTechnology, log, pathways, resourceTypes, totalEnergy, getContinentGenerationModifiers, getContinentProfile, getEffectiveUpgradeCost, getKnowledgeRequirement, getPathwayAffinity, getTransmissionLevel, gatherAmount, worldMarketBlocked, worldMarketRate } from "./rules.js";
-import { featureEnabled, modeAllowsTechnology, defaultCapabilityForPathway } from "./config.js";
+import { applyCommand, applyCommandFast, canCompleteFoundingProject, currentPlayerId } from "./engine.js?v=a5.22.27";
+import { randomInt } from "./random.js?v=a5.22.27";
+import { activeGlobalEvent, conditionApplies, hasRelevantSystem, emptyEnergy, fuelPlantMaximumOutput, fossilChainSnapshot, getTechnology, hasTechnology, log, pathways, resourceTypes, totalEnergy, getContinentGenerationModifiers, getContinentProfile, getEffectiveUpgradeCost, getKnowledgeRequirement, getPathwayAffinity, getTransmissionLevel, gatherAmount, worldMarketBlocked, worldMarketRate } from "./rules.js?v=a5.22.27";
+import { featureEnabled, modeAllowsTechnology, defaultCapabilityForPathway } from "./config.js?v=a5.22.27";
 // -----------------------------------------------------------------------------
 // AI strategy profiles
 // -----------------------------------------------------------------------------

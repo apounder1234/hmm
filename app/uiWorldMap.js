@@ -1,6 +1,6 @@
 // @ts-nocheck
-import { uiShared } from "./uiShared.js";
-import { interfaceCopy, resourceVisuals } from "./uiCopy.js";
+import { uiShared } from "./uiShared.js?v=a5.22.27";
+import { interfaceCopy, resourceVisuals } from "./uiCopy.js?v=a5.22.27";
 
 const {
     React,

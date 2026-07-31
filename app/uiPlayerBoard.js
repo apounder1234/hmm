@@ -1,7 +1,7 @@
 // @ts-nocheck
-import { uiShared } from "./uiShared.js";
-import { EnergyChain } from "./uiEnergyChain.js";
-import { interfaceCopy } from "./uiCopy.js";
+import { uiShared } from "./uiShared.js?v=a5.22.27";
+import { EnergyChain } from "./uiEnergyChain.js?v=a5.22.27";
+import { interfaceCopy } from "./uiCopy.js?v=a5.22.27";
 
 const {
     h,

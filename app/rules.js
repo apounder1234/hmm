@@ -1,7 +1,7 @@
 // @ts-check
 // SUNPATHS organised source. Each section has one named responsibility.
-import { shuffle, pick } from "./random.js";
-import { featureEnabled } from "./config.js";
+import { shuffle, pick } from "./random.js?v=a5.22.27";
+import { featureEnabled } from "./config.js?v=a5.22.27";
 // -----------------------------------------------------------------------------
 // Shared resources, Energy and lookup helpers
 // -----------------------------------------------------------------------------

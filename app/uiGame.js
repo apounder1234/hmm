@@ -1,11 +1,11 @@
 // @ts-nocheck
-import { uiShared } from "./uiShared.js";
-import { SetupProgress, WeatherCard } from "./uiSetup.js";
-import { buildDebugSnapshot, formatBugReport } from "./debug.js";
-import { EnergyChain } from "./uiEnergyChain.js";
-import { WorldMap } from "./uiWorldMap.js";
-import { PlayerBoard } from "./uiPlayerBoard.js";
-import { OtherRegionSummary } from "./uiReviewSummary.js";
+import { uiShared } from "./uiShared.js?v=a5.22.27";
+import { SetupProgress, WeatherCard } from "./uiSetup.js?v=a5.22.27";
+import { buildDebugSnapshot, formatBugReport } from "./debug.js?v=a5.22.27";
+import { EnergyChain } from "./uiEnergyChain.js?v=a5.22.27";
+import { WorldMap } from "./uiWorldMap.js?v=a5.22.27";
+import { PlayerBoard } from "./uiPlayerBoard.js?v=a5.22.27";
+import { OtherRegionSummary } from "./uiReviewSummary.js?v=a5.22.27";
 const { React, useEffect, useMemo, useState, applyCommand, currentOrder, activeGlobalEvent, directTradeBlocked, getPathwayAffinity, invariantErrors, gatherAmount, getTechnology, pathways, warehouseTotal, hasRelevantSystem, chooseDispatchPlan, pumpAi, serializeGame, conditionImpactPreview, developmentActionLegality, effectiveBuildCost, getConditionRelevance, getCurrentMaximumLight, getDevelopmentConstraint, getEndGameDebrief, getGenerationExplanation, getPrimaryBottleneck, getReliabilityTarget, getRequiredLight, importLegality, previewDispatch, technologyImpactPreview, technologyReadiness, temporaryKnowledgeUnlocks, h, weatherLabels, resourceLabels, pathwayLabels, affinityLabels, resourceKeys, localConditionExplanation, weatherExplanation, technologyExplanation, technologyBenefitExplanation, globalEventExplanation, clone, phaseLabel, currentPlayer, conditionDefinition, featureEnabled, modeAllowsTechnology, getGameMode, button, panel, InfoModal, ConfirmationModal, ConditionReveal, friendlyActionName, learningCostPreview, actionConfirmation, stat, badge, download } = uiShared;
 function LockedReason({ reason }) {
     return h("div", { className: "locked-reason" }, h("span", null, "🔒"), h("small", null, reason));

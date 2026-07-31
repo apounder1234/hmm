@@ -1,6 +1,6 @@
 // @ts-check
 // SUNPATHS organised source. Each section has one named responsibility.
-import { directTradeBlocked, getPlayer, log, resourceTypes, revealPreparedAndBeginFounding, warehouseTotal } from "./rules.js";
+import { directTradeBlocked, getPlayer, log, resourceTypes, revealPreparedAndBeginFounding, warehouseTotal } from "./rules.js?v=a5.22.27";
 // -----------------------------------------------------------------------------
 // Summit and direct-resource trading
 // -----------------------------------------------------------------------------

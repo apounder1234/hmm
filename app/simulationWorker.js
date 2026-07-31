@@ -1,6 +1,6 @@
 // @ts-nocheck
 // SUNPATHS organised source. Each section has one named responsibility.
-import { runSimulationBatch, runTradeModeComparison } from "./simulation.js";
+import { runSimulationBatch, runTradeModeComparison } from "./simulation.js?v=a5.22.27";
 // -----------------------------------------------------------------------------
 // Background simulation Worker
 // -----------------------------------------------------------------------------
