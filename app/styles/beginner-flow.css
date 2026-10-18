@@ -1,0 +1,68 @@
+/* SUNPATHS A5.40: Beginner-only visualisation, no mechanics or shared-mode layout changes. */
+.beginner-flow { margin: 1rem 0; border: 1px solid var(--line); border-radius: 16px; padding: 18px; background: var(--surface-2); }
+.beginner-flow__heading {display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:14px;margin-bottom:18px}
+.beginner-flow__heading small {font-size:.64rem;font-weight:800;letter-spacing:.12em;color:var(--green)}
+.beginner-flow__heading h4 {font-size:1.45rem;color:var(--sun);margin:.22rem 0}
+.beginner-flow__heading p {margin:0;line-height:1.45;color:var(--text);max-width:40rem;font-size:.87rem}
+.beginner-flow__controls {display:flex;flex-wrap:wrap;gap:6px}
+.beginner-flow__control,.beginner-flow__next {border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:9px;font:inherit;font-size:.8rem;font-weight:700;padding:.55rem .75rem;cursor:pointer}
+.beginner-flow__control:hover,.beginner-flow__next:hover {border-color:var(--sun)}
+.beginner-flow__control:focus-visible,.beginner-flow__next:focus-visible,.beginner-flow__step:focus-visible,.beginner-preview-guide button:focus-visible {outline:3px solid var(--sun);outline-offset:3px}
+.beginner-flow__track {display:grid;grid-template-columns:minmax(0,1fr) 22px minmax(0,1fr) 22px minmax(0,1fr) 22px minmax(0,1fr);gap:4px;align-items:stretch}
+.beginner-flow__step {display:flex;flex-direction:column;align-items:center;text-align:center;gap:5px;border:1px solid var(--line);border-radius:13px;background:var(--surface);color:var(--text);padding:12px 6px;min-width:0;cursor:pointer;transition:opacity .3s,transform .3s,border-color .3s,box-shadow .3s}
+.beginner-flow__step.is-pending {opacity:.35;filter:saturate(.3)}
+.beginner-flow__step.is-revealed {opacity:1;animation:sp-flow-arrival .5s ease-out both}
+.beginner-flow__step.is-current {border-color:var(--sun);box-shadow:0 0 0 2px color-mix(in srgb,var(--sun) 26%,transparent)}
+.beginner-flow__step:hover {border-color:var(--green)}
+.beginner-flow__step-icon {font-size:1.5rem;line-height:1.25;color:var(--sun)}
+.beginner-flow__step-label {font-size:.78rem;font-weight:700;min-height:2.1em}
+.beginner-flow__step-value {display:flex;flex-direction:column;gap:0;align-items:center}
+.beginner-flow__step-value b {font-size:1.8rem;line-height:1.1;font-variant-numeric:tabular-nums;color:var(--text)}
+.beginner-flow__step-value small {font-size:.64rem;color:var(--muted);line-height:1.2}
+.beginner-flow__arrow {align-self:center;text-align:center;color:var(--muted);font-size:1.35rem;opacity:.3;transition:opacity .45s,color .45s}
+.beginner-flow__arrow.is-active {opacity:1;color:var(--green)}
+.beginner-flow-pips {display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:3px;min-height:13px}
+.beginner-flow-pips i {display:block;width:8px;height:13px;border-radius:4px;background:var(--green);opacity:0;transform:translateY(5px)}
+.beginner-flow-pips.type-lighting i {background:var(--sun)}
+.beginner-flow-pips.is-visible i {animation:sp-flow-pip-in .2s ease-out forwards;animation-delay:calc(var(--pip-index)*.09s)}
+.beginner-flow__explanation {margin-top:16px;border-left:3px solid var(--sun);padding:12px 14px;background:var(--surface);border-radius:3px 10px 10px 3px}
+.beginner-flow__explanation-head {display:flex;gap:9px;align-items:baseline}
+.beginner-flow__explanation-head span {font-size:.65rem;letter-spacing:.08em;font-weight:800;color:var(--muted)}
+.beginner-flow__explanation-head strong {color:var(--sun)}
+.beginner-flow__explanation p {margin:.45rem 0;line-height:1.5;font-size:.9rem}
+.beginner-flow__footnote {display:block;font-size:.74rem;color:var(--muted);line-height:1.45}
+.beginner-flow__chips {display:flex;gap:5px;flex-wrap:wrap;margin:.5rem 0}
+.beginner-flow__loss-chip {font-size:.73rem;padding:3px 8px;border-radius:9px;border:1px solid var(--line);background:var(--surface-2);color:var(--text)}
+.beginner-flow__next {margin-top:10px;border-color:var(--sun);color:var(--sun)}
+.beginner-flow__loading {font-size:.86rem;color:var(--muted)}
+.beginner-flow__outcome {margin-top:14px;border-radius:11px;display:flex;gap:9px;align-items:center;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);padding:12px}
+.beginner-flow__outcome.is-met {border-color:var(--green)}
+.beginner-flow__outcome.is-missed {border-color:var(--sun)}
+.beginner-flow__outcome-icon {font-size:1.5rem;color:var(--sun)}
+.beginner-flow__outcome strong {font-size:.95rem}
+.beginner-flow__outcome span:not(.beginner-flow__outcome-icon) {font-size:.8rem;white-space:nowrap;color:var(--muted)}
+.beginner-flow__outcome p {width:100%;margin:0;font-size:.85rem}
+.beginner-preview-guide__prompt {padding:7px 12px;font-size:.8rem;line-height:1.4;color:var(--muted);margin:4px 0;border-radius:8px;background:var(--surface-2)}
+.beginner-preview-guide__detail {padding:12px 14px;margin-top:9px;background:var(--surface-2);border:1px solid var(--sun);border-radius:11px;position:relative;}
+.beginner-preview-guide__detail strong {color:var(--sun);font-size:.95rem;display:block;padding-right:50px}
+.beginner-preview-guide__detail p {font-size:.85rem;line-height:1.5;margin:.4rem 0}
+.beginner-preview-guide__detail small {font-size:.72rem;color:var(--muted)}
+.beginner-preview-guide__detail button {position:absolute;top:8px;right:8px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--text);font-size:.72rem;cursor:pointer;padding:5px 8px}
+@keyframes sp-flow-arrival {from{transform:translateY(5px)}to{transform:translateY(0)}}
+@keyframes sp-flow-pip-in {to{opacity:1;transform:translateY(0)}}
+@media (max-width:700px) {
+ .beginner-flow{padding:12px}
+ .beginner-flow__heading h4{font-size:1.2rem}
+ .beginner-flow__track{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+ .beginner-flow__arrow{display:none}
+ .beginner-flow__step{padding:9px 3px;border-radius:10px}
+ .beginner-flow__step-label{font-size:.68rem}
+ .beginner-flow__step-value b{font-size:1.5rem}
+ .beginner-flow__step-icon{font-size:1.2rem}
+ .beginner-flow__step-value small{font-size:.57rem}
+ .beginner-flow-pips i{width:6px;height:10px}
+}
+@media(prefers-reduced-motion:reduce) {
+ .beginner-flow *, .beginner-flow *::before, .beginner-flow *::after {animation:none!important;transition:none!important}
+ .beginner-flow-pips.is-visible i {opacity:1;transform:none}
+}
