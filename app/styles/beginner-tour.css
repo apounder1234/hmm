@@ -1,0 +1,14 @@
+/* Driver.js skin; only the Beginner tutorial uses these classes. */
+.driver-popover.sunpaths-driver-tour {
+  max-width:min(330px,calc(100vw - 24px));
+  border:1px solid var(--sun);border-radius:12px;
+  background:var(--surface);color:var(--text);
+  box-shadow:0 16px 45px rgba(0,0,0,.45);
+  font-family:inherit;
+}
+.sunpaths-driver-tour .driver-popover-title {color:var(--sun);font-size:1rem;line-height:1.35}
+.sunpaths-driver-tour .driver-popover-description {color:var(--text);font-size:.86rem;line-height:1.5}
+.sunpaths-driver-tour .driver-popover-close-btn {color:var(--text);border-radius:6px}
+.sunpaths-driver-tour .driver-popover-close-btn:hover {color:var(--sun)}
+.sunpaths-driver-tour .driver-popover-arrow {border-color:var(--surface)}
+@media(prefers-reduced-motion:reduce) { .sunpaths-driver-tour * {transition:none!important;animation:none!important} }
